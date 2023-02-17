@@ -1,7 +1,7 @@
 from flask import Flask, jsonify
 app = Flask(__name__)
 
-hostname = {{ ansible_hostname }}
+hostname = '{{ ansible_hostname }}'
 prenom = 'Olivier'
 
 @app.route("/")
